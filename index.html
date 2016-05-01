@@ -2,9 +2,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="Follows any link, on any page. No idea what happens next.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+    <title>Anywhere</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -21,10 +21,54 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    What up, world?
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <main class="mdl-layout__content">
+
+        <h3>put this bookmarklet in your fav bar :</h3>
+        <div class="code-zone">
+          <h4>Drag <a href="javascript:(function(t,e){for(var a=Array.prototype.slice.call(document.getElementsByTagName('a')),o=new RegExp('^(javascript|mailto|(https?)?'+e+'/?#)'),n=!1;!n&a.length>0;)i=Math.floor(Math.random()*a.length),o.test(a[i].href)||a[i].href==e?a.splice(i,1):(t=a[i].href,n=!0);document.location.href=t})('http://swapthatlink.com',document.location.href);
+" id="anywhere"> <i class="material-icons">insert_drive_file</i> this link</a> in your fav bar.</h4>
+
+          <script src="https://gist.github.com/raphisky/b5bf1c969f11a60288e2828f86faf5a1.js"></script>
+          <div class="icon-zone">
+            <i class="material-icons">open_with</i>
+            <i class="material-icons">flip_to_back</i>
+            <i class="material-icons md-48 orange600">open_in_browser</i>
+          </div>
+        </div>
+        <h4>Click it anytime, it will take you anywhere.</h3>
+        <h4>Basically, <b> it follows any link on any page.</b></h3>
+        <h1>We have no idea what happens next.</h1>
+        <h4>Happy browsing.</h4>
+      </main>
+  </div>
+  <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript">
+  var isDragging = false;
+  $("#anywhere")
+  .mousedown(function() {
+    isDragging = false;
+  })
+  .mousemove(function() {
+    isDragging = true;
+  })
+  .mouseup(function() {
+    var wasDragging = isDragging;
+    isDragging = false;
+    if (wasDragging) {
+      $(this).text('anywhere')
+    }
+  });
+  </script>
 
   </body>
 </html>
