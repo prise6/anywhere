@@ -51,6 +51,24 @@
       </main>
   </div>
   <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript">
+  var isDragging = false;
+  $("#anywhere")
+  .mousedown(function() {
+    isDragging = false;
+  })
+  .mousemove(function() {
+    isDragging = true;
+  })
+  .mouseup(function() {
+    var wasDragging = isDragging;
+    isDragging = false;
+    if (wasDragging) {
+      $(this).text('anywhere')
+    }
+  });
+  </script>
 
   </body>
 </html>
