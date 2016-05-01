@@ -2,3 +2,8 @@ body {
   background: #EEEEEE;
   text-align:center;
 }
+
+.code-zone {
+  width: 400px;
+  margin:auto;
+}
