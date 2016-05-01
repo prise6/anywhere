@@ -5,7 +5,7 @@
 
 javascript:(function(r = "http://swapthatlink.com", c = document.location.href){
 	var l = Array.prototype.slice.call(document.getElementsByTagName('a')),
-	    e = new RegExp("^(mailto|(https?)?" + c + "/?#)"),
+	    e = new RegExp("^(javascript|mailto|(https?)?" + c + "/?#)"),
 	    f = false;
 	while(!f & l.length>0){
 		i = Math.floor(Math.random()*l.length);
