@@ -41,18 +41,23 @@
   <body>
   <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <main class="mdl-layout__content">
+        <br>
 
-        <h3>This careless bookmarklet follows any link, on any page.</h3>
-        <div class="code-zone">
-          <h4>1. Drag <a href="javascript:(function(t,e){for(var a=Array.prototype.slice.call(document.getElementsByTagName('a')),o=new RegExp('^(javascript|mailto|(https?)?'+e+'/?#)'),n=!1;!n&a.length>0;)i=Math.floor(Math.random()*a.length),o.test(a[i].href)||a[i].href==e?a.splice(i,1):(t=a[i].href,n=!0);document.location.href=t})('http://swapthatlink.com',document.location.href);
-" id="anywhere"> <i class="material-icons">insert_drive_file</i> this link</a> in your fav bar.</h4>
+        <h1><span class="red">Linkroulette</span> is a careless <span class="red">bookmarklet.</span></h1>
+        <h4>It clicks on <span class="red">any link</span>, on any page.</h4>
+        <br>
+        <h1>Try <span class="red">linkroulette</span> now:</h1>
+        <h4>1. Put <a href="javascript:(function(t,e){for(var a=Array.prototype.slice.call(document.getElementsByTagName('a')),o=new RegExp('^(javascript|mailto|(https?)?'+e+'/?#)'),n=!1;!n&a.length>0;)i=Math.floor(Math.random()*a.length),o.test(a[i].href)||a[i].href==e?a.splice(i,1):(t=a[i].href,n=!0);document.location.href=t})('http://swapthatlink.com',document.location.href);
+" id="anywhere"> <i class="material-icons">insert_drive_file</i> this link</a> as a favorite in your fav bar.</h4>
+        <img src="images/setup.gif" alt="as explained by a gif" />
+
+          <h6><em>Tip: Give it a cool name like "anywhere", "GTFO" or "Freddie"</em></h6>
+          <div class="code-zone">
 
           <script src="https://gist.github.com/raphisky/b5bf1c969f11a60288e2828f86faf5a1.js"></script>
 
         </div>
         <h4>2. Click it anytime, it will take you anywhere.</h3>
-        <h1>We have no idea what happens next.</h1>
-
           <img src="images/showcase.gif" alt="as explained by a gif" />
 
 

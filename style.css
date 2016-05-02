@@ -3,6 +3,14 @@ body {
   text-align:center;
 }
 
+h1 {
+  font-weight: 600;
+}
+
+.red {
+  font-weight: 600;
+  color: #ff4081;
+}
 .code-zone {
   width: 400px;
   margin:auto;
