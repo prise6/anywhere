@@ -1,7 +1,16 @@
-## redirect to ***random*** link in current page
+# Linkroulette is a careless bookmarklet
+##  It clicks on any link, on any page
 
- __bookmarklet to install : drag and drop__
+### Website 
+Feel free to visit website https://prise6.github.io/anywhere
 
 
- to be continued
+### Extension
+Install firefox extension : https://addons.mozilla.org/fr/firefox/addon/anywhere/
+
+
+### Developpers
+
+__We'd love you to participate \o/__
+
 
