@@ -3,7 +3,7 @@
  * - naive code - 
  */
 
-javascript:(function(r = "http://swapthatlink.com", c = document.location.href){
+javascript:(function(r, c){
 	var l = Array.prototype.slice.call(document.getElementsByTagName('a')),
 	    e = new RegExp("^(javascript|mailto|(https?)?" + c + "/?#)"),
 	    f = false;
@@ -17,4 +17,4 @@ javascript:(function(r = "http://swapthatlink.com", c = document.location.href){
 	}
 	document.location.href = r;
 	return;
-})();
+})("http://swapthatlink.com", document.location.href);
